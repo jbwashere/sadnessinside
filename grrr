@@ -1,0 +1,6 @@
+_G.locked = false
+
+while _G.locked == true do
+	task.wait(0.00001)
+	game.Players.LocalPlayer.Character.StandMorph:PivotTo(game.Players[_G.player].Character.HumanoidRootPart.CFrame)
+end
